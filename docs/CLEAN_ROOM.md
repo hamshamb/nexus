@@ -11,25 +11,28 @@ dependencies, and original experiments. Do not inspect or reproduce restricted
 competitors' implementation details. When unsure whether a source is allowed, stop and
 record the question before using it.
 
-## Prohibited source material
+## Prohibited Source Material
 
-**Essential Mod** is source-available under a restrictive license and is prohibited
-reference material in every form:
+Any source code, binary, asset set, protocol implementation, documentation, or other implementation material that is not legally suitable for use as a development reference is prohibited.
 
-- Do not open, clone, read, decompile, or search its source or binaries.
-- Do not copy or translate its code, assets, icons, UI layouts, strings, packet
-  structures, protocols, backend APIs, or database structures.
-- Do not derive design decisions from descriptions or summaries of its internals,
-  including AI-generated summaries and second-hand writeups of its architecture.
-- Do not ask another person or agent to do any of the above on your behalf.
+- Do not open, clone, read, decompile, reverse engineer, or search restricted source code or binaries.
+- Do not copy, translate, adapt, or reconstruct code, assets, icons, UI layouts, strings, packet structures, protocols, backend APIs, database structures, or other protected implementation details.
+- Do not derive design or implementation decisions from summaries, writeups, AI-generated descriptions, screenshots, or second-hand explanations of restricted internals.
+- Do not ask another person, model, agent, or tool to inspect prohibited material on your behalf.
+- If restricted repositories, binaries, archives, decompiled output, or related artifacts appear in or near the workspace, do not open or inspect them.
+- If search results or documentation expose implementation details from a restricted source, do not incorporate those details into the project.
+- Before using any third-party source as a reference, verify that its license and terms permit the intended form of inspection, reuse, adaptation, or incorporation.
 
-If an Essential repository or artifact appears anywhere in or near the workspace, do not
-open it. If search results expose Essential implementation details, do not incorporate
-them.
+This restriction applies to **implementation details**, not to:
 
-This prohibition covers *implementation details*. Publicly observable product behavior
-(e.g. "hosting mods exist and use invite flows") is common knowledge and is not a
-protected detail.
+- general ideas;
+- publicly observable product behavior;
+- industry-standard techniques;
+- public specifications and RFCs;
+- documented public APIs;
+- independently developed functionality.
+
+Where a third-party project is permissively licensed and intentionally used as reference material, record its license, version or revision where practical, and provenance in the appropriate project documentation such as `docs/THIRD_PARTY.md` or `docs/CLEAN_ROOM.md`.
 
 ## Permitted sources
 
