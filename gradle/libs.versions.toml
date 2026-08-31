@@ -1,0 +1,43 @@
+# Dependency versions for Nexus.
+# Every entry here is mirrored in docs/THIRD_PARTY.md with its license.
+# Versions were verified against live registries; do not bump from memory.
+
+[versions]
+# Minecraft / Fabric toolchain. Verified 2026-08-31.
+minecraft = "26.2"
+fabric-loader = "0.19.3"
+fabric-api = "0.158.0+26.2"
+loom = "1.17.20"
+
+# Java. Minecraft 26.2 declares javaVersion.majorVersion = 25.
+java = "25"
+
+# Transport plumbing. Pinned to the exact Netty version Minecraft 26.2 bundles
+# (verified from the 26.2 version JSON), so the mod runtime never sees two Netty
+# versions. Netty 4.2 also carries the mainline QUIC codec used from M4.
+netty = "4.2.15.Final"
+
+# JSON for the coordination protocol. Pinned to the exact Gson Minecraft 26.2
+# bundles (verified from the 26.2 version JSON), same one-copy policy as Netty.
+gson = "2.14.0"
+
+# Test.
+junit = "5.11.4"
+assertj = "3.27.3"
+
+[libraries]
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+netty-buffer = { module = "io.netty:netty-buffer", version.ref = "netty" }
+netty-transport = { module = "io.netty:netty-transport", version.ref = "netty" }
+netty-handler = { module = "io.netty:netty-handler", version.ref = "netty" }
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+assertj = { module = "org.assertj:assertj-core", version.ref = "assertj" }
+
+[bundles]
+netty = ["netty-buffer", "netty-transport", "netty-handler"]
+test = ["junit-jupiter", "assertj"]
+
+[plugins]
+loom = { id = "fabric-loom", version.ref = "loom" }

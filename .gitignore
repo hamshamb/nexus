@@ -1,0 +1,37 @@
+.gradle/
+build/
+out/
+bin/
+
+# Loom / Minecraft dev environment
+run/
+run-*/
+.fabric/
+remappedSrc/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# Secrets -- never commit. .env.example is the documented, placeholder-only exception.
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+credentials*.json
+secrets.*
+
+# OS
+.DS_Store
+Thumbs.db

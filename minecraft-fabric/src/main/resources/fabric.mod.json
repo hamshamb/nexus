@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "nexus",
+	"version": "${version}",
+	"name": "Nexus",
+	"description": "Host your single-player world over the Internet: open your world, press Host World, send a code, play.",
+	"authors": [
+		"hamshamb"
+	],
+	"contact": {
+		"homepage": "https://github.com/hamshamb/nexus",
+		"sources": "https://github.com/hamshamb/nexus",
+		"issues": "https://github.com/hamshamb/nexus/issues"
+	},
+	"license": "MPL-2.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.nexus.mc.NexusMod"
+		],
+		"client": [
+			"dev.nexus.mc.client.NexusClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "nexus.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

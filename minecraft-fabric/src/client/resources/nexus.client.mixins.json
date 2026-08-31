@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "dev.nexus.mc.mixin.client",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"IntegratedServerMixin",
+		"IntegratedServerAccessor",
+		"LanServerPingerAccessor",
+		"ServerConnectionListenerAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
