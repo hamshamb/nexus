@@ -64,8 +64,6 @@ Before adding any dependency:
   Mojang-published jar for the targeted version and are cited as such.
 - Pull requests identify any new external technical source that materially influenced
   the design.
-- AI tools may help with work only when their prompts and supplied context follow these
-  same restrictions. Generated output does not make a prohibited source permissible.
 
 ## Contributor checklist
 
