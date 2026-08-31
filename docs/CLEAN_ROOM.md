@@ -1,4 +1,4 @@
-# Clean-Room Provenance Rules
+# Nexus Provenance Rules
 
 Nexus is an independently engineered Minecraft world-hosting mod. These rules exist so
 that its independence is demonstrable, not merely asserted. They bind every contributor
